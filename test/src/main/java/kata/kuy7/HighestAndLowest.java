@@ -39,7 +39,7 @@ public class HighestAndLowest {
         // Code here or
         String[] num = numbers.split(" ");
         ArrayList<Integer> list = new ArrayList<>();
-        for(String s : num){
+        for (String s : num) {
             list.add(Integer.parseInt(s));
         }
         Collections.sort(list);

@@ -16,7 +16,7 @@ public class EnoughIsEnough {
 
         if (max < 1) return new int[0];
 
-        final HashMap<Integer,Integer> map = new HashMap<>();
+        final HashMap<Integer, Integer> map = new HashMap<>();
         final List<Integer> list = new ArrayList<>();
 
         for (final Integer i : elements) {
@@ -24,7 +24,7 @@ public class EnoughIsEnough {
             if (v == null || v < max) list.add(i);
         }
 
-        return list.stream().mapToInt(i->i).toArray();
+        return list.stream().mapToInt(i -> i).toArray();
     }
 
     public static int[] deleteNthStreamMerge(int[] elements, int maxOccurrences) {
