@@ -44,7 +44,7 @@ public class BrainLuck {
                 }
             } else if (codeChar[i] == '-') {
                 cpu.set(pointer, (char) (cpu.get(pointer) - 1));
-                if (cpu.get(pointer) == 0) {
+                if (cpu.get(pointer) < 0) {
                     cpu.set(pointer, (char) 255);
                 }
             } else if (codeChar[i] == ',') {
